@@ -1,0 +1,292 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Damion", cursive;
+    background-color: #ffcccc; /* Light pink background */
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.container1 {
+    margin: 0 auto;
+}
+
+header {
+    background-color: #d9b3ff; /* Pink header background */
+    color: #fff; /* White text color */
+    padding: 1px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #f8f9fa; /* Hover color */
+}
+
+main {
+    padding: 20px 0;
+}
+
+section {
+    padding: 50px 0;
+    background-color: #fff; /* White section background */
+    margin-bottom: 20px; /* Add some space between sections */
+    border-radius: 10px; /* Rounded corners */
+}
+
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.flip-box {
+    margin: 10px;
+    border: none;
+}
+
+.flip-box-back img {
+    width: 200px; /* Adjust the size as needed */
+    height: 280px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.flip-box-front {
+    width: 200px; /* Adjust the size as needed */
+    height: 280px;
+border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.flip-box-inner {
+    border: none;
+    justify-content: center;
+    
+}
+
+
+.hidden {
+    display: none; /* Hide sections by default */
+}
+
+footer {
+    background-color: #d9b3ff; /* Pink footer background */
+    color: #fff; /* White text color */
+    text-align: center;
+    padding: 20px 0;
+    border-top: 1px solid #fff; /* White border on top */
+}
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(224, 224, 235, 0.5); /* Semi-transparent black background */
+    z-index: 9999;
+}
+
+.popup-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.popup-content h2 {
+    margin-top: 0;
+}
+
+.popup-content p {
+    margin-bottom: 20px;
+}
+
+#playButton {
+    background-color: #d580ff; /* Blue button background color */
+    color: #fff; /* White button text color */
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-family: "Damion", cursive;
+}
+
+#playButton:hover {
+    background-color: #d9b3ff; /* Darker blue hover color */
+}
+
+#btn {
+            position: absolute;
+            transition: .5s;
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px;
+            height: 40px;
+            width: 80px;
+            border: none;
+            font-size: 16px;
+            border-radius: 12px;
+            left: 17%;
+        }
+        
+#forgiveButton {
+            position: absolute;
+            transition: .5s;
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px;
+            height: 40px;
+            width: 80px;
+            border: none;
+            font-size: 16px;
+            border-radius: 12px;
+        }
+        
+.flip-box {
+  background-color: transparent;
+  width: 200px;
+  height: 280px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  
+}
+
+/* This container is needed to position the front and back side */
+.flip-box-inner {
+  position: relative;
+  width: 200px;
+  height: 280px;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+  
+}
+
+/* Position the front and back side */
+.flip-box-front, .flip-box-back, .flip-box-back1 {
+  position: absolute;
+  width: 200px;
+  height: 280px;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-box-front {
+  background-color: #bbb;
+  color: black;
+  border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Style the back side */
+.flip-box-back {
+  background-color: #ffcccc;
+  color: white;
+  transform: rotateY(180deg);
+  width: 200px;
+  height: 280px;
+  border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.flip-box-back1 {
+  background-color: #d9b3ff;
+  color: white;
+  transform: rotateY(180deg);
+  width: 200px;
+  height: 280px;
+  border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.mySlides {display:none;}
+
+iframe {
+            border: none;
+            justify-content: center;
+        }
+        
+.section {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+            padding: 50px 0;
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+.content {
+    width: 50%;
+    padding: 0 20px;
+}
+.content img {
+    max-width: 100%;
+    height: auto;
+}
+@media screen and (max-width: 768px) {
+    .section {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .content {
+        width: 100%;
+        padding: 20px;
+    }
+}
+
+.section img:hover {
+    transform: scale(1.1);
+}
+
+.section img {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s;
+    
+}
