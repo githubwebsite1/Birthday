@@ -56,7 +56,6 @@ section {
     padding: 50px 0;
     background-color: #fff; /* White section background */
     margin-bottom: 20px; /* Add some space between sections */
-    border-radius: 10px; /* Rounded corners */
 }
 
 .gallery-container {
@@ -275,8 +274,45 @@ iframe {
     }
     .content {
         width: 100%;
-        padding: 20px;
     }
+    .container1 {
+		width: 100%;
+    }
+	.popup {
+		width: 100%;
+	}
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .section {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .content {
+        width: 100%;
+    }
+    .container1 {
+		width: 100%;
+    }
+	.popup {
+		width: 100%;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+    .section {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .content {
+        width: 100%;
+    }
+    .container1 {
+		width: 100%;
+    }
+	.popup {
+		width: 100%;
+	}
 }
 
 .section img:hover {
