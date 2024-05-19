@@ -273,13 +273,13 @@ iframe {
         text-align: center;
     }
     .content {
-        width: 100%;
+        width: 70%;
     }
     .container1 {
-		width: 100%;
+		width: 70%;
     }
 	.popup {
-		width: 100%;
+		width: 70%;
 	}
 }
 
@@ -289,13 +289,13 @@ iframe {
         text-align: center;
     }
     .content {
-        width: 100%;
+        width: 80%;
     }
     .container1 {
-		width: 100%;
+		width: 80%;
     }
 	.popup {
-		width: 100%;
+		width: 80%;
 	}
 }
 
