@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Carousel</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .carousel-container {
+            display: flex;
+            align-items: center;
+			width: 80%;
+        }
+        .carousel {
+            display: flex;
+            overflow: hidden;
+			align-items: center;
+            width: 1200px;
+			height: 800px;
+        }
+        .carousel img {
+            width: 400px;
+			height: 400px;
+            opacity: 100;
+			align-items: center;
+            transition: transform 0.5s, opacity 0.5s;
+			background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .carousel img.highlighted {
+            transform: scale(1.2);
+            opacity: 1;
+        }
+        .arrow {
+            cursor: pointer;
+            font-size: 2em;
+            user-select: none;
+			padding: 10px;
+        }
+        .text {
+            margin-top: 20px;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+    <div class="carousel-container">
+        <div class="arrow" id="prev">&laquo;</div>
+        <div class="carousel" id="carousel">
+            <img src="Photos\Wish\wish1.jpg" alt="Image 1">
+            <img src="Photos\Wish\wish2.jpg" alt="Image 2">
+            <img src="Photos\Wish\wish3.jpg" alt="Image 3">
+            <img src="Photos\Wish\wish4.jpg" alt="Image 4">
+			<img src="Photos\Wish\wish5.jpg" alt="Image 5">
+            <img src="Photos\Wish\wish6.jpg" alt="Image 6">
+			<img src="Photos\Wish\wish7.jpg" alt="Image 7">
+            <img src="Photos\Wish\wish8.jpg" alt="Image 8">
+			<img src="Photos\Wish\wish9.jpg" alt="Image 9">
+            <img src="Photos\Wish\wish10.jpg" alt="Image 10">
+			<img src="Photos\Wish\wish11.jpg" alt="Image 11">
+            <img src="Photos\Wish\wish12.jpg" alt="Image 12">
+            <img src="Photos\Wish\wish13.jpg" alt="Image 13">
+        </div>
+        <div class="arrow" id="next">&raquo;</div>
+    </div>
+    <div class="text" id="image-text">Text for Image 2</div>
+
+    <script>
+        const carousel = document.getElementById('carousel');
+        const images = carousel.querySelectorAll('img');
+        const prev = document.getElementById('prev');
+        const next = document.getElementById('next');
+        const imageText = document.getElementById('image-text');
+        const texts = [
+            "Text for Image 1",
+            "Text for Image 2",
+            "Text for Image 3",
+            "Text for Image 4",
+            "Text for Image 5",
+            "Text for Image 6",
+            "Text for Image 7",
+            "Text for Image 8",
+            "Text for Image 9",
+            "Text for Image 10",
+			"Text for Image 11",
+            "Text for Image 12",
+            "Text for Image 13",
+        ];
+
+        let currentIndex = 0;
+
+        function updateCarousel() {
+            images.forEach((img, index) => {
+                img.classList.remove('highlighted');
+                img.style.display = 'none';
+            });
+
+            for (let i = 0; i < 3; i++) {
+                let index = (currentIndex + i) % images.length;
+                images[index].style.display = 'block';
+            }
+
+            const middleIndex = (currentIndex + 1) % images.length;
+            images[middleIndex].classList.add('highlighted');
+            imageText.textContent = texts[middleIndex];
+        }
+
+        prev.addEventListener('click', () => {
+            currentIndex = (currentIndex === 0) ? images.length - 1 : currentIndex - 1;
+            updateCarousel();
+        });
+
+        next.addEventListener('click', () => {
+            currentIndex = (currentIndex === images.length - 1) ? 0 : currentIndex + 1;
+            updateCarousel();
+        });
+
+        updateCarousel();
+    </script>
+</body>
+</html>
