@@ -63,12 +63,4 @@ const forgiveButton = document.getElementById('forgiveButton');
 		});
 });
 
-function loadPage(pageUrl) {
-            var iframe = document.createElement('iframe');
-            iframe.src = pageUrl;
-            iframe.style.width = '100%';
-            iframe.style.height = '700px';
-            document.getElementById('pageContainer').innerHTML = '';
-            document.getElementById('pageContainer').appendChild(iframe);
-        }
-		
+
