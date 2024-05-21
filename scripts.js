@@ -29,7 +29,7 @@ function carousel() {
         bgMusic.play();
         playPopup.style.display = 'none'; // Hide the play popup after clicking
 		// Trigger click event on the background music button
-       document.querySelector('nav ul li:nth-child(5) a').click();
+       document.querySelector('nav ul li:nth-child(2) a').click();
     });
 
     // Hide all sections except the first one
