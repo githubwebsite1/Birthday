@@ -8,9 +8,10 @@
         body {
             font-family: Arial, sans-serif;
             display: flex;
+			position: fixed;
             flex-direction: column;
             align-items: center;
-            height: 100vh;
+            height: 150vh;
             margin: 0;
         }
         .carousel-container {
@@ -22,7 +23,7 @@
             display: flex;
             overflow: hidden;
 			align-items: center;
-            width: 1200px;
+            width: 1250px;
 			height: 600px;
         }
         .carousel img {
@@ -45,9 +46,20 @@
             user-select: none;
 			padding: 10px;
         }
-        .text {
-            margin-top: 20px;
+        .text h2{
+            margin-top: 1px;
             font-size: 1.2em;
+			font-family: "Damion", cursive;
+			text-align: center;
+        }
+		.text p{
+            margin-top: 1px;
+            font-size: 1.2em;
+			font-family: "Damion", cursive;
+			text-align: space-around;
+			width: 55%;
+			padding: 10px 300px;
+			white-space: pre-line;
         }
     </style>
 </head>
@@ -55,45 +67,149 @@
     <div class="carousel-container">
         <div class="arrow" id="prev">&laquo;</div>
         <div class="carousel" id="carousel">
-            <img src="Photos\Wish\wish1.jpg" alt="Image 1">
-            <img src="Photos\Wish\wish2.jpg" alt="Image 2">
-            <img src="Photos\Wish\wish3.jpg" alt="Image 3">
-            <img src="Photos\Wish\wish4.jpg" alt="Image 4">
-			<img src="Photos\Wish\wish5.jpg" alt="Image 5">
-            <img src="Photos\Wish\wish6.jpg" alt="Image 6">
-			<img src="Photos\Wish\wish7.jpg" alt="Image 7">
-            <img src="Photos\Wish\wish8.jpg" alt="Image 8">
-			<img src="Photos\Wish\wish9.jpg" alt="Image 9">
-            <img src="Photos\Wish\wish10.jpg" alt="Image 10">
-			<img src="Photos\Wish\wish11.jpg" alt="Image 11">
-            <img src="Photos\Wish\wish12.jpg" alt="Image 12">
-            <img src="Photos\Wish\wish13.jpg" alt="Image 13">
+            <img src="Photos\Wish\wish1.jpg" alt="Image 1" data-heading="RAYA" data-paragraph=
+			   "Dear Shivangi, &#10;
+                Happy Birthday! 🌟 &#10;
+                Today, as you celebrate another year of your incredible journey, I, Raya, want to wish you all the strength, courage, and wisdom that you carry within you. 
+				Just like me, you have a fierce heart and an unwavering spirit. May your path be filled with new adventures, and may you always have the bravery to face every challenge head-on. &#10;
+                In the land of Kumandra, we believe in the power of unity and trust. May you always be surrounded by loyal friends and loved ones who lift you up and support you in all your endeavors. 
+				Keep being the remarkable person you are, and let your determination lead you to greatness.&#10;
+                Have an extraordinary birthday filled with joy, love, and unforgettable moments!&#10;
+                With all my best wishes,&#10;
+                Raya 🐉💫">
+            <img src="Photos\Wish\wish2.jpg" alt="Image 2" data-heading="TIANA" data-paragraph=
+			    "Dear Shivangi, &#10;
+                 Happy Birthday! 🎉✨ &#10;
+                 On this special day, I, Tiana, wish you a year filled with dreams realized and goals achieved. Just like me, you have the determination and hard work to turn your dreams into reality. 
+				 May your journey be as sweet as the beignets from my restaurant and as fulfilling as a night under the New Orleans stars. &#10;
+                 Remember, it’s your unwavering commitment and passion that set you apart. Keep striving for your dreams, and never lose that spark of ambition that drives you forward. 
+				 The world is full of possibilities, and with your spirit, there's nothing you can't accomplish. &#10;
+                 Have a wonderful birthday, overflowing with love, joy, and delicious moments! &#10;
+                 With warmest wishes, &#10;
+                 Tiana 🌟🍰">
+            <img src="Photos\Wish\wish3.jpg" alt="Image 3" data-heading="MOANA" data-paragraph=
+			    "Hey Shivangi! &#10;
+                 Happy Birthday to a fellow voyager at heart! 🌊✨ &#10;
+                 Today, I, Moana, celebrate you and your adventurous spirit. You've got that special spark, the one that pushes you to explore new horizons and embrace the unknown with courage. 
+				 Just as the ocean calls to me, may you always hear the call of your dreams and have the courage to follow them wherever they lead. &#10;
+                 Remember, it’s the journey that shapes us, and you have the strength and determination to navigate any waters. Stay true to yourself, and 
+				 let your heart guide you to incredible places and unforgettable experiences. &#10;
+                 Here’s to another year of discovery, wonder, and growth. May your path be filled with joy, laughter, and the love of those who believe in you as much as you believe in yourself. &#10;
+                 Sail on, fearless and free, and have an amazing birthday! &#10;
+                 With all my ocean-sized wishes, &#10;
+                 Moana 🌺🌴">
+            <img src="Photos\Wish\wish4.jpg" alt="Image 4" data-heading="MULAN" data-paragraph=
+                "Dear Shivangi, &#10;
+                 Happy Birthday! 🎉✨ &#10;
+                 On this special day, I, Mulan, wish you a year filled with the courage and strength that you embody. Just like me, you possess a heart full of bravery and a spirit that never gives up. 
+				 May your path be filled with honor, and may you always find the strength to overcome any challenge that comes your way. &#10;
+                 Remember, it’s your unique blend of determination and kindness that makes you truly special. Keep being the incredible warrior you are, and let your inner light shine brightly. &#10;
+                 Have a fantastic birthday, filled with joy, love, and unforgettable adventures! &#10;
+                 With all my best wishes, &#10;
+                 Mulan 💖🗡️">
+            <img src="Photos\Wish\wish5.jpg" alt="Image 5" data-heading="BELLE" data-paragraph=
+			    "Dear Shivangi, &#10;
+                 Wishing you the happiest of birthdays! 📚🌹 &#10;
+                 On this special day, I, Belle, hope your year ahead is filled with enchantment and wonder. You have a heart as curious as mine and a mind that loves to explore new worlds. 
+				 May you always find joy in discovering new stories and learning new things. &#10;
+                 Remember, it’s your kindness, intelligence, and inner beauty that make you truly extraordinary. Keep following your dreams and let your light shine bright, 
+				 just like the tales you love so much. &#10;
+                 Have a magical birthday, filled with love, joy, and the company of good friends! &#10;
+                 With all my warmest wishes, &#10;
+                 Belle 📚🌹">
+            <img src="Photos\Wish\wish6.jpg" alt="Image 6" data-heading="POCAHONTAS" data-paragraph=
+			    "Dear Shivangi, &#10;
+                 Happy Birthday! 🎉 &#10;
+                 On this day of your birth, as the rivers sing and the winds carry our thoughts, I, Pocahontas, send you heartfelt wishes from the depths of the forest. 
+				 May your birthday be a celebration of your spirit, as wild and beautiful as the world around us. &#10;
+                 May the colors of the wind paint your day with joy and adventure, and may the songs of nature be the music of your celebration. 
+				 Your kindness and strength are like the roots of the ancient trees, grounding us all in love and understanding. &#10;
+                 As you blow out the candles and make your wishes, may they be carried on the wings of the eagle to the heavens above. May your dreams be as vast and endless as the sky, 
+				 and may you always find the courage to chase them. &#10;
+                 Happy birthday, Shivangi. May your day be filled with laughter, love, and the magic of the wilderness. &#10;
+                 With love and blessings, &#10;
+                 Pocahontas 🌿🦅🍃">
+            <img src="Photos\Wish\wish7.jpg" alt="Image 7" data-heading="SNOW WHITE" data-paragraph=
+			   "Dear Shivangi, &#10;
+                Wishing you the happiest of birthdays, filled with love, laughter, and the joy of dreams come true! 🍎🌟 As you celebrate another year of beauty and grace, 
+				may your day be as magical as a fairy tale. 🌹 &#10;
+                Just as the forest creatures gather around me, I hope you are surrounded by loved ones who cherish you for the kind and wonderful person you are. 🐇 
+				May your heart be as pure as the first snowfall and your spirit as bright as the fairest of them all. 💖 &#10;
+                May your birthday be the beginning of a year filled with new adventures, cherished moments, and dreams that take flight like a dove. 🕊️ 
+				Never forget that you are braver than you believe, stronger than you seem, and loved more than you know. 💫 &#10;
+                Happy birthday, Shivangi! May your day be as sweet and joyful as the songs we sing in the forest. 🎶 &#10;
+                With love and fairy tale wishes, &#10;
+                Snow White 🍎✨🌹">
+            <img src="Photos\Wish\wish8.jpg" alt="Image 8" data-heading="CINDERELLA" data-paragraph=
+				"Dear Shivangi, &#10;
+                👑 Wishing you a birthday that's as enchanting as a ballroom dance and as magical as a fairy godmother's spell! 💫 
+				As you step into this new year, may your path be lined with kindness, your days filled with laughter, and your heart brimming with dreams. ✨ &#10;
+                Just as my glass slipper led me to my happily ever after, I hope this year brings you closer to your own dreams and aspirations. 
+				May you find joy in every step you take and courage in every challenge you face. 🌟 &#10;
+                May your birthday be a day of celebration, surrounded by those who love and cherish you. May you always remember that the magic lies within you, 
+				just like it did for me when I found my prince charming. 🎀 &#10;
+                Happy birthday, Shivangi! May your day be filled with love, laughter, and all the wonders your heart desires. 🎂 &#10;
+                With love and fairy tale wishes, &#10;
+                Cinderella 👑">
+            <img src="Photos\Wish\wish9.jpg" alt="Image 9" data-heading="RAPUNZEL" data-paragraph=
+			   "Heyy Shivangi,&#10;
+                Sending you the warmest birthday wishes from the top of my tower! As I let down my hair to the world below, I hope this year brings you adventures as thrilling as my own. 🌟&#10;
+                May your day be as radiant as the lanterns that light up the sky on my birthday, and may your heart be as free as my spirit in the great wide somewhere. 🌌&#10;
+                Just as I found my way out of the tower, may you find your way to all your dreams and desires. Remember, the journey may be long, but the destination is worth it. 🌈&#10;
+                Happy birthday, Shivangi! May your day be filled with love, joy, and the magic of believing in your dreams. 🎂&#10;
+                With love and light,&#10;
+                Rapunzel 🌼💜👑">
+            <img src="Photos\Wish\wish10.jpg" alt="Image 10" data-heading="MERIDA" data-paragraph=
+			   "Dear Shivangi, &#10;
+                Happy Birthday, lassie! 🏹🐻 &#10;
+                On this grand day, I, Merida, wish ye a year as bold and adventurous as the Highlands! May your path be filled with the thrill of new challenges and the joy of overcoming them, just as I faced the fiercest bears and unruly clans. &#10;
+                May yer spirit be as free as the wind that sweeps across the moors, and may yer heart be as brave as a warrior in battle. Remember, it’s yer fiery determination and independent spirit that make ye truly remarkable. &#10;
+                Have a birthday as wild and untamed as the forests of DunBroch, filled with laughter, love, and the joy of forging yer own path. &#10;
+                With all the strength of a bear and the wisdom of a queen, &#10;
+                Merida 🏹🐻">
+            <img src="Photos\Wish\wish11.jpg" alt="Image 11" data-heading="AURORA" data-paragraph=
+			   "Dear Shivangi, &#10;
+                Happy Birthday! 🎉✨ &#10;
+                On this special day, I, Aurora, wish you a year filled with the sweetness and grace that you embody. Just like me, you possess a heart full of compassion and a spirit that shines brightly. &#10;
+                May your path be filled with dreams, and may you always find the courage to chase after them. &#10;
+                Remember, it’s your unique blend of kindness and determination that makes you truly special. Keep following your heart and let your inner light guide you. &#10;
+                Have a magical birthday, filled with love, joy, and enchanting moments! &#10;
+                With all my best wishes, &#10;
+                Aurora 💖👑">
+            <img src="Photos\Wish\wish12.jpg" alt="Image 12" data-heading="JASMINE" data-paragraph=
+			   "Dear Shivangi,
+                🕌🌟🧞‍♂️ &#10;
+                On your special day, I, Princess Jasmine, send you heartfelt wishes from the palace of Agrabah. May your birthday be as radiant as the desert sun and as magical as a wish granted by a genie. &#10;
+                As you embark on another year of your journey, remember to stay true to yourself, just as I did when I sought freedom beyond the palace walls. Your spirit is as strong as the winds of the Arabian desert, and your dreams are as precious as the most valuable treasure. &#10;
+                May your day be filled with adventures as thrilling as a magic carpet ride and moments as precious as a diamond in the rough. And when faced with challenges, remember that true strength comes from within. &#10;
+                Happy birthday, Shivangi! May your day be filled with love, laughter, and the fulfillment of all your heartfelt wishes. &#10;
+                With love and admiration, &#10;
+                Jasmine 🕌🌟🧞‍♂️">
+            <img src="Photos\Wish\wish13.jpg" alt="Image 13" data-heading="ARIEL" data-paragraph=
+			   "Dear Shivangi, &#10;
+                Wishing you the happiest of birthdays! 🎉✨ &#10;
+                On this special day, I, Ariel, hope your year ahead is filled with magical adventures and dreams come true. Like me, you have a spirit that’s eager to explore and a heart full of curiosity. 
+				May you always find the courage to dive into new experiences and uncover the wonders of the world around you. &#10;
+                Remember, it’s your passion for discovery and your bright, vibrant personality that make you truly unique. 
+				Keep embracing your inner mermaid and let your light shine through every adventure you embark on. &#10;
+                Have an enchanting birthday, overflowing with love, joy, and unforgettable memories! &#10;
+                With oceans of best wishes, &#10;
+                Ariel 🐚🌊">
         </div>
         <div class="arrow" id="next">&raquo;</div>
     </div>
-    <div class="text" id="image-text">Text for Image 2</div>
+    <div class="text">
+        <h2 id="image-heading">TIANA</h2>
+        <p id="image-paragraph">Paragraph for Image 2</p>
+    </div>
 
     <script>
         const carousel = document.getElementById('carousel');
         const images = carousel.querySelectorAll('img');
         const prev = document.getElementById('prev');
         const next = document.getElementById('next');
-        const imageText = document.getElementById('image-text');
-        const texts = [
-            "Text for Image 1",
-            "Text for Image 2",
-            "Text for Image 3",
-            "Text for Image 4",
-            "Text for Image 5",
-            "Text for Image 6",
-            "Text for Image 7",
-            "Text for Image 8",
-            "Text for Image 9",
-            "Text for Image 10",
-			"Text for Image 11",
-            "Text for Image 12",
-            "Text for Image 13",
-        ];
+        const imageHeading = document.getElementById('image-heading');
+        const imageParagraph = document.getElementById('image-paragraph');
 
         let currentIndex = 0;
 
@@ -110,7 +226,8 @@
 
             const middleIndex = (currentIndex + 1) % images.length;
             images[middleIndex].classList.add('highlighted');
-            imageText.textContent = texts[middleIndex];
+            imageHeading.textContent = images[middleIndex].getAttribute('data-heading');
+            imageParagraph.textContent = images[middleIndex].getAttribute('data-paragraph');
         }
 
         prev.addEventListener('click', () => {
