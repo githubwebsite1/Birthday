@@ -316,7 +316,7 @@ iframe {
 
 .tooltip .tooltiptext {
   visibility: hidden;
-  width: 120px;
+  width: 240px;
   background-color: #555;
   color: #fff;
   text-align: center;
@@ -325,7 +325,7 @@ iframe {
   position: absolute;
   z-index: 1;
   bottom: 80%;
-  left: 85%;
+  left: 78%;
   margin-left: -60px;
   opacity: 0;
   transition: opacity 0.3s;
