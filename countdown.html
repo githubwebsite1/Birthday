@@ -240,7 +240,17 @@ body #container #countdown #text {
 </div>
     <script>
 	// Set the date we're counting down to
-var endDate = new Date(2026, 04, 22, 0, 0, 0).getTime();
+function getNextTargetDate() {
+    const now = new Date();
+    let target = new Date(now.getFullYear(), 4, 22, 0, 0, 0);
+
+    if (now > target) {
+        target.setFullYear(target.getFullYear() + 1);
+    }
+    return target;
+}
+
+var endDate = getNextTargetDate();
 // Update the count down every 1 second
 var x = setInterval(function() {
     // Get todays date and time
@@ -267,6 +277,7 @@ var x = setInterval(function() {
 </body>
 
 </html>
+
 
 
 
